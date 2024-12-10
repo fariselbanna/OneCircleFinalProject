@@ -1,50 +1,51 @@
+/* Global Reset for consistent styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-                    /* Body Styling */
+/* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Keeping it simple and clean */
     color: #333;
     line-height: 1.6;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* light gray background for easy readability */
 }
 
-                    /* Navigation Bar */
+/* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1b263b;
+    background-color: #1b263b; /* Dark blue for contrast */
     padding: 1rem 2rem;
-    position: sticky;
+    position: sticky; /* Sticky at the top for accessibility */
     top: 0;
     z-index: 1000;
 }
 
 .navbar .logo a,
 .nav-links ul li a {
-    font-family: 'Arial', sans-serif; 
+    font-family: 'Arial', sans-serif;
     font-weight: bold;
-    font-size: 1.2rem; 
-    color: #fff;
-    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff; /* White text for contrast */
+    text-decoration: none; /* No underline for links */
 }
 
 .nav-links ul {
     display: flex;
-    list-style: none;
+    list-style: none; /* Clean list */
     gap: 1rem;
 }
 
 .nav-links ul li a:hover {
-    color: #f5c518;
+    color: #f5c518; /* Bright yellow hover effect */
 }
 
 .nav-links ul li a.btn-signup {
-    background-color: #f5c518;
+    background-color: #f5c518; /* Signup button stands out */
     color: #1b263b;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -53,74 +54,74 @@ body {
 }
 
 .nav-links ul li a.btn-signup:hover {
-    background-color: #e4b400;
+    background-color: #e4b400; /* Slightly darker hover effect */
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #1b263b, #34495e);
+    background: linear-gradient(135deg, #1b263b, #34495e); /* Nice gradient for the hero */
     color: #fff;
     text-align: center;
     padding: 4rem 1rem;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Large header */
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #fff; 
+    color: #fff; /* White to match hero background */
     margin-top: 1rem;
 }
 
-/* Section General Styling */
+/* General Section Styling */
 section {
-    padding: 3rem 2rem;
+    padding: 3rem 2rem; /* Spaced for clarity */
     text-align: center;
 }
 
 h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #1b263b;
+    color: #1b263b; /* Headings in dark blue */
     margin-bottom: 0.5rem;
 }
 
 .section-divider {
     width: 5rem;
     height: 0.3rem;
-    background-color: #f5c518;
+    background-color: #f5c518; /* Matches the theme */
     margin: 1rem auto 2rem auto;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded edges */
 }
 
 /* Mission Section */
 .mission p,
 .story p {
-    max-width: 800px;
+    max-width: 800px; /* Keeps content readable on large screens */
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* Slightly larger text for readability */
     line-height: 1.8;
-    color: #555;
+    color: #555; /* Neutral gray */
 }
 
 /* Core Values Section */
 .core-values .values {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible grid */
     gap: 2rem;
     margin-top: 2rem;
 }
 
 .core-values .value-card {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; /* Light border */
     padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .core-values .value-card h3 {
@@ -131,7 +132,7 @@ h2 {
 }
 
 .core-values .value-card p {
-    font-size: 0.95rem;
+    font-size: 0.95rem; /* Slightly smaller text */
     color: #666;
 }
 
@@ -148,56 +149,23 @@ h2 {
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 1.5rem;
-    border-radius: 8px;
+    border-radius: 8px; /* Matches other card styles */
     text-align: center;
-    width: 200px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.team-card h3 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #1b263b;
-    margin-bottom: 0.5rem;
-}
-
-.team-card p {
-    font-size: 0.95rem;
-    color: #666;
+    width: 200px; /* Fixed width for uniformity */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 /* Impact Section */
 .impact .impact-stats {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 2rem; /* Space between cards */
     margin-top: 2rem;
-}
-
-.impact .stat-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    width: 200px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.impact .stat-card h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #1b263b;
-}
-
-.impact .stat-card p {
-    font-size: 1rem;
-    color: #666;
 }
 
 /* Call to Action Section */
 .cta {
-    background-color: #1b263b;
+    background-color: #1b263b; /* Matches the navbar */
     color: #fff;
     padding: 3rem 2rem;
     text-align: center;
@@ -207,12 +175,11 @@ h2 {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #fff;
 }
 
 .cta .btn-cta {
     display: inline-block;
-    background-color: #f5c518;
+    background-color: #f5c518; /* Consistent yellow theme */
     color: #1b263b;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
@@ -228,8 +195,8 @@ h2 {
 /* Footer */
 footer {
     background-color: #1b263b;
-    color: #fff;
+    color: #fff; /* White for contrast */
     text-align: center;
     padding: 1.5rem 2rem;
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Smaller text */
 }

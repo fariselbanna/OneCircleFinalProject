@@ -5,7 +5,6 @@
     font-family: 'Roboto', Arial, sans-serif;
 }
 
-        /* Body Styling */
 body {
     background-color: #EAF4F4;
     color: #333;
@@ -15,15 +14,13 @@ body {
     min-height: 100vh;
 }
 
-    /* Header Styling */
 .dashboard-header {
     background-color: #1b263b;
     color: white;
-    padding: 10px 0;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
 .dashboard-header .logo {
@@ -50,16 +47,13 @@ body {
     background-color: #415a77;
 }
 
-    /* Main Dashboard Container */
 .dashboard-container {
     display: flex;
     flex: 1;
     gap: 20px;
     padding: 20px;
-    position: relative;
 }
 
-/* Sidebar Styling */
 .sidebar, .right-sidebar {
     background-color: #415a77;
     padding: 20px;
@@ -68,14 +62,12 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Sidebar Headings */
 .sidebar h3, .right-sidebar h3 {
     color: #ffffff;
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-/* Quick Access Card */
 .sidebar-top-card ul {
     list-style: none;
     padding: 0;
@@ -99,7 +91,6 @@ body {
     background-color: #778da9;
 }
 
-/* Recent Activity Section */
 .recent-activity {
     margin-top: auto;
 }
@@ -130,7 +121,6 @@ body {
     background-color: #5e252e;
 }
 
-/* Central Section */
 .dashboard-main {
     flex: 1;
     background-color: white;
@@ -150,7 +140,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* Bio Section */
 .bio-details p {
     margin-bottom: 8px;
 }
@@ -159,7 +148,6 @@ body {
     color: #333;
 }
 
-/* Portfolio Section */
 .portfolio-grid {
     display: flex;
     flex-wrap: wrap;
@@ -182,12 +170,6 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.portfolio-item p {
-    font-size: 1em;
-    color: #333;
-}
-
-/* Right Sidebar */
 .stats-section ul {
     list-style: none;
     padding: 0;
@@ -233,7 +215,6 @@ body {
     background-color: #5e252e;
 }
 
-/* Buttons */
 .btn {
     background-color: #722f37;
     color: white;
@@ -250,7 +231,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Footer Styling */
 .dashboard-footer {
     background-color: #1b263b;
     color: white;

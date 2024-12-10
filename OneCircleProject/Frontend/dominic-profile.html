@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominic Dabish - Profile</title>
+    <link rel="stylesheet" href="dominic-profile.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">OneCircle</h1>
+            <nav class="nav-links">
+                <a href="feed.html">Home</a>
+                <a href="profile-dashboard.html">Profile</a>
+                <a href="about.html">About Us</a>
+                <a href="messages.html">Messages</a>
+                <a href="login.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile-header">
+            <h1>Dominic Dabish</h1>
+            <p>Engineer | Educator | Entrepreneur</p>
+            <img src="dominic.png" alt="Dominic Dabish" class="profile-image">
+        </section>
+
+        <section class="profile-details">
+            <h2>About Dominic Dabish</h2>
+            <p>
+                Dominic Dabish is an experienced software engineer in the Greater Detroit area. He earned graduate and undergraduate degrees in Computer Science from Oakland University. 
+                With experience at organizations like the U.S. Department of Defense and PwC, Dominic continues to excel as a professional, educator, and entrepreneur.
+            </p>
+            <p>
+                Beyond his technical expertise, Dominic is an Adjunct Professor of Computer Science at Lawrence Technological University. He has a passion for mentoring students and advancing 
+                technology-enhanced learning, and he founded the "Coding with Dom" platform to empower learners worldwide.
+            </p>
+            <p>
+                He is also the Managing Partner of Dabish Ventures, focusing on innovative startups, and President of the World Computing Organization, helping shape the future of technology 
+                professionals globally.
+            </p>
+
+            <h3>Skills</h3>
+            <ul class="info-list">
+                <li>Programming</li>
+                <li>Data Structures</li>
+                <li>Computer Organization</li>
+                <li>Software Engineering</li>
+            </ul>
+
+            <h3>Services</h3>
+            <ul class="info-list">
+                <li>Technical Consulting</li>
+                <li>Educational Workshops</li>
+                <li>Software Development</li>
+            </ul>
+
+            <h3>Cultural Background</h3>
+            <ul class="info-list">
+                <li>Assyrian</li>
+            </ul>
+
+            <h3>Languages Spoken</h3>
+            <ul class="info-list">
+                <li>English</li>
+            </ul>
+        </section>
+
+        <section class="interaction">
+            <h3>Connect with Dominic</h3>
+            <button id="message-btn" class="interaction-btn">Message Dominic</button>
+            <button id="connect-btn" class="interaction-btn">Connect</button>
+            <button id="clear-conversation" class="action-btn">Clear Conversation</button>
+            <button id="undo-clear" class="action-btn">Undo Clear</button>
+        </section>
+
+        <!-- Conversation Section -->
+        <section class="conversation">
+            <h3>Your Conversation with Dominic</h3>
+            <div id="conversation-container" class="message-container">
+                <!-- Messages will dynamically appear here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Message Modal -->
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <h3>Send a Message to Dominic</h3>
+            <textarea id="message-box" placeholder="Write your message here..." rows="5"></textarea>
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 One Circle. All rights reserved.</p>
+    </footer>
+
+    <script src="dominic.js"></script>
+</body>
+</html>
