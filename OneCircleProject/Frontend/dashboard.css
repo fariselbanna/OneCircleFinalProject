@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+        /* Body Styling */
+body {
+    background-color: #EAF4F4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+    /* Header Styling */
+.dashboard-header {
+    background-color: #1b263b;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.dashboard-header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.dashboard-header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dashboard-header nav ul li a:hover {
+    background-color: #415a77;
+}
+
+    /* Main Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+/* Sidebar Styling */
+.sidebar, .right-sidebar {
+    background-color: #415a77;
+    padding: 20px;
+    border-radius: 10px;
+    width: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Headings */
+.sidebar h3, .right-sidebar h3 {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Quick Access Card */
+.sidebar-top-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-top-card ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar-top-card ul li a {
+    color: #e0e1dd;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-top-card ul li a:hover {
+    background-color: #778da9;
+}
+
+/* Recent Activity Section */
+.recent-activity {
+    margin-top: auto;
+}
+
+.recent-activity .activity {
+    margin-bottom: 15px;
+    background-color: #e0e1dd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activity .activity button {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    background-color: #722f37;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.recent-activity .activity button:hover {
+    background-color: #5e252e;
+}
+
+/* Central Section */
+.dashboard-main {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h1 {
+    font-size: 1.8em;
+    color: #722f37;
+}
+
+.bio-section h2, .portfolio h2 {
+    font-size: 1.4em;
+    color: #722f37;
+    margin-bottom: 10px;
+}
+
+/* Bio Section */
+.bio-details p {
+    margin-bottom: 8px;
+}
+
+.bio-details p strong {
+    color: #333;
+}
+
+/* Portfolio Section */
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    flex: 1 1 calc(25% - 30px);
+    background-color: #e0e1dd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Right Sidebar */
+.stats-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.stats-section ul li {
+    margin-bottom: 8px;
+    color: #e0e1dd;
+}
+
+.ratings-reviews {
+    margin-top: auto;
+    background-color: #e0e1dd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ratings-reviews h3 {
+    color: #722f37;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.ratings-reviews .reviews p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.ratings-reviews .view-more {
+    display: block;
+    text-align: center;
+    background-color: #722f37;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.ratings-reviews .view-more:hover {
+    background-color: #5e252e;
+}
+
+/* Buttons */
+.btn {
+    background-color: #722f37;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #5e252e;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+.dashboard-footer {
+    background-color: #1b263b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    margin-top: auto;
+}

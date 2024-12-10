@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Role Selection</title>
+  <link rel="stylesheet" href="role-selection.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to OneCircle</h1>
+    <p>Select your role to continue:</p>
+  </header>
+
+  <main class="role-selection">
+    <!-- Role Card: Client -->
+    <div class="role-card client">
+      <h2>Client</h2>
+      <p>Looking for services? Choose this option to explore and connect with professionals.</p>
+      <button onclick="selectRole('client')" aria-label="Choose Client Role">Choose Client</button>
+    </div>
+
+    <!-- Role Card: Professional -->
+    <div class="role-card professional">
+      <h2>Professional</h2>
+      <p>Ready to showcase your services? Choose this option to build your professional profile.</p>
+      <button onclick="selectRole('professional')" aria-label="Choose Professional Role">Choose Professional</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 OneCircle. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Redirect based on role selection
+    function selectRole(role) {
+      if (role === 'client') {
+        window.location.href = 'profile-creation-client.html'; 
+      } else if (role === 'professional') {
+        window.location.href = 'profile-creation.html'; 
+      }
+    }
+  </script>
+</body>
+</html>

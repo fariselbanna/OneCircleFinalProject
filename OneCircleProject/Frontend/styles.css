@@ -1,0 +1,296 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background-color: #F6F8FA; 
+    color: #1B263B; 
+    line-height: 1.6;
+}
+
+/* Header & Navigation Bar */
+header {
+    background-color: #1B263B; 
+    color: #F6F8FA; 
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #F6F8FA;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #F6F8FA;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700; 
+}
+
+.signup-button {
+    background-color: #FFD700; 
+    color: #1B263B;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #E5C100;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(180deg, #1B263B, #415A77); 
+    text-align: center;
+    padding: 80px 20px;
+    color: #F6F8FA;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #F6F8FA;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #722F37; 
+    color: #F6F8FA;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #5B202B; 
+}
+
+/* Features Section */
+#features {
+    background-color: #F6F8FA; 
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #1B263B; 
+    text-transform: uppercase;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #EAF4F4; 
+    border: 1px solid #D1D9E6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #1B263B;
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #1B263B;
+}
+
+.feature-card p {
+    font-size: 1.1em;
+    color: #415A77; 
+}
+
+/* Plan Section */
+#plan {
+    background-color: #F6F8FA;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#plan h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1B263B;
+    text-transform: uppercase;
+}
+
+#plan p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #415A77;
+}
+
+.plan-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    position: relative;
+    text-align: center;
+    background-color: #F6F8FA; 
+    border: 1px solid #D1D9E6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.plan-card.most-popular {
+    border: 2px solid #FFD700; 
+}
+
+.plan-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #1B263B;
+}
+
+.plan-card p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #415A77;
+}
+
+.plan-card .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1B263B;
+}
+
+.plan-button {
+    background-color: #722F37; 
+    color: #F6F8FA;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+    background-color: #5B202B; 
+}
+
+/* Badge for Most Popular */
+.plan-card.most-popular .badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, #FFD700, #FFCC33);
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #1B263B; 
+    color: #F6F8FA; 
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer ul li a {
+    color: #F6F8FA;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #FFD700;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+}

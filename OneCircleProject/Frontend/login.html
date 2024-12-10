@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">OneCircle</a>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#plan" class="nav-link">Plan</a></li>
+                <li><a href="#contact-us" class="nav-link">Contact Us</a></li>
+                <li><a href="login.html" class="nav-link">Log In</a></li>
+                <li><a href="signup.html" class="btn-signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login">
+        <div class="form-container">
+            <h2>Login to Your Account</h2>
+            <p>Access your account and stay connected with trusted professionals.</p>
+            <form id="loginForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+
+            <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 OneCircle. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Hardcoded credentials for demo purposes
+        const correctEmail = "felbanna8935@sdsu.edu";
+        const correctPassword = "OneCircleFaris";
+
+        // Handle form submission
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            if (email === correctEmail && password === correctPassword) {
+                window.location.href = "dashboard.html";
+            } else {
+                alert("Incorrect email or password.");
+            }
+        });
+    </script>
+</body>
+</html>
+

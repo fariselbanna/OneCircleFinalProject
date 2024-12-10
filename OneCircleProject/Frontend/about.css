@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                    /* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+                    /* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b263b;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo a,
+.nav-links ul li a {
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+    font-size: 1.2rem; 
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-links ul li a:hover {
+    color: #f5c518;
+}
+
+.nav-links ul li a.btn-signup {
+    background-color: #f5c518;
+    color: #1b263b;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links ul li a.btn-signup:hover {
+    background-color: #e4b400;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1b263b, #34495e);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #fff; 
+    margin-top: 1rem;
+}
+
+/* Section General Styling */
+section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1b263b;
+    margin-bottom: 0.5rem;
+}
+
+.section-divider {
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #f5c518;
+    margin: 1rem auto 2rem auto;
+    border-radius: 5px;
+}
+
+/* Mission Section */
+.mission p,
+.story p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Core Values Section */
+.core-values .values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.core-values .value-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.core-values .value-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1b263b;
+    margin-bottom: 0.5rem;
+}
+
+.core-values .value-card p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Team Section */
+.team .team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.team-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1b263b;
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Impact Section */
+.impact .impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.impact .stat-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.impact .stat-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1b263b;
+}
+
+.impact .stat-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #1b263b;
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.cta .btn-cta {
+    display: inline-block;
+    background-color: #f5c518;
+    color: #1b263b;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.cta .btn-cta:hover {
+    background-color: #e4b400;
+}
+
+/* Footer */
+footer {
+    background-color: #1b263b;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,11 @@
+{
+    "users": [
+      { "id": 1, "name": "John Doe", "location": "New York", "profession": "Plumber" },
+      { "id": 2, "name": "Jane Smith", "location": "San Francisco", "profession": "Web Developer" }
+    ],
+    "posts": [
+      { "id": 1, "userId": 1, "content": "Looking for an electrician in New York." },
+      { "id": 2, "userId": 2, "content": "Offering web development services." }
+    ]
+  }
+  

@@ -1,0 +1,205 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #0d1b2a, #1b263b, #e0e1dd); 
+    color: #e0e1dd;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #1b263b;
+    color: #e0e1dd;
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 4px solid #415a77;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    background-color: #778da9;
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar .progress {
+    background-color: #415a77;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Profile Creation Section */
+main {
+    background-color: #1b263b;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+main h2 {
+    color: #e0e1dd;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Fields */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e0e1dd;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #778da9;
+    background-color: #1b263b;
+    color: #e0e1dd;
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #415a77;
+    outline: none;
+    box-shadow: 0 0 6px rgba(65, 90, 119, 0.5); 
+}
+
+input[type="file"] {
+    padding: 5px;
+    background-color: #1b263b;
+    border: 1px solid #778da9;
+    cursor: pointer;
+}
+
+/* Form Steps */
+.form-step {
+    display: none; 
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #415a77;
+    border-radius: 8px;
+    border: 1px solid #778da9;
+}
+
+.form-step.active {
+    display: block; 
+}
+
+/* Navigation Buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #800020;
+    color: #e0e1dd;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    min-width: 120px;
+}
+
+button:hover {
+    background-color: #722f37; 
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+button#prevBtn {
+    background-color: #415a77;
+}
+
+button#prevBtn:hover {
+    background-color: #778da9;
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #415a77;
+    color: #e0e1dd;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}

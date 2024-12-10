@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Profile Creation - OneCircle</title>
+    <link rel="stylesheet" href="profile-creation-client.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Create Your Client Profile</h1>
+            <p>Help professionals understand your needs by completing your profile.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <div class="form-container">
+            <form id="clientProfileForm">
+                
+
+                
+                <div class="form-step active">
+                    <h2>Step 1: Basic Information</h2>
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+
+                    <label for="profilePicture">Profile Picture (Optional)</label>
+                    <input type="file" id="profilePicture" accept="image/*">
+
+                    <label for="email">Email (Pre-filled)</label>
+                    <input type="email" id="email" readonly>
+
+                    <label for="location">Location (Optional)</label>
+                    <input type="text" id="location" placeholder="Enter your city, state, country">
+                </div>
+
+<!-- Step 2: Service Needs -->
+<div class="form-step">
+    <h2>Step 2: Service Needs</h2>
+    <label for="servicesNeeded">Services Needed</label>
+    <textarea id="servicesNeeded" rows="4" placeholder="Describe the services you're looking for" required></textarea>
+
+    <label for="budget">Budget Range (Optional)</label>
+    <input type="text" id="budget" placeholder="Enter your budget range (e.g., $500-$1000)">
+
+    <label for="timeline">Timeline/Urgency</label>
+    <select id="timeline" required>
+        <option value="" disabled selected>Select your timeline</option>
+        <option value="immediate">Immediate</option>
+        <option value="1-2 weeks">1–2 weeks</option>
+        <option value="1 month">Within a month</option>
+        <option value="flexible">Flexible</option>
+    </select>
+
+    <label for="languages">Languages Spoken (Optional)</label>
+    <input type="text" id="languages" placeholder="List the languages you speak (e.g., English, Spanish)">
+</div>
+
+
+                <!-- Step 3: Preferences -->
+                <div class="form-step">
+                    <h2>Step 3: Preferences</h2>
+                    <label for="preferences">Preferred Professional Criteria (Optional)</label>
+                    <input type="text" id="preferences" placeholder="e.g., Location, experience, specialization">
+
+                    <label for="culturalConsiderations">Cultural Considerations (Optional)</label>
+                    <textarea id="culturalConsiderations" rows="4" placeholder="Share any cultural or ethical preferences"></textarea>
+
+                    <label for="referenceMaterials">Portfolio/Reference Materials (Optional)</label>
+                    <input type="file" id="referenceMaterials" accept=".pdf, .doc, .jpg, .jpeg, .png">
+
+                    <label for="communication">Preferred Communication</label>
+                    <select id="communication" required>
+                        <option value="" disabled selected>Select a method</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="in-app">In-App Messaging</option>
+                    </select>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="button-container">
+                    <button type="button" id="prevBtn">Back</button>
+                    <button type="button" id="nextBtn">Next</button>
+                    <button type="submit" id="submitBtn" style="display: none;">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 OneCircle. All rights reserved.</p>
+    </footer>
+
+    <script src="profile-creation-client.js"></script>
+</body>
+</html>

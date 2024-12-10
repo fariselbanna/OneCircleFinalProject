@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OneCircle - Find Professionals</title>
+  <link rel="stylesheet" href="feed.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>OneCircle</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile-dashboard.html">Profile</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="messages.html">Messages</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Find Professionals and Opportunities</h2>
+      <div class="search-filters">
+        <select id="line-of-work-select">
+          <option value="" disabled selected>Select Line of Work</option>
+          <option>Education</option>
+          <option>Engineering</option>
+          <option>Healthcare</option>
+          <option>Hospitality</option>
+          <option>IT</option>
+          <option>Marketing</option>
+          <option>Real Estate</option>
+          <option>Retail</option>
+          <option>Technology</option>
+          <option>Transportation</option>
+        </select>
+        <select id="profession-select">
+          <option value="" disabled selected>Select Profession</option>
+          <option>Accountant</option>
+          <option>Construction Worker</option>
+          <option>Fitness Trainer</option>
+          <option>Nurse</option>
+          <option>Plumber</option>
+          <option>Software Engineer</option>
+          <option>Teacher</option>
+          <option>Therapist</option>
+          <option>UX Designer</option>
+          <option>Writer</option>
+        </select>
+        <select id="descent-select">
+          <option value="" disabled selected>Select Descent</option>
+          <option>Arab</option>
+          <option>Asian</option>
+          <option>African</option>
+          <option>European</option>
+          <option>Hispanic</option>
+        </select>
+        <select id="language-select">
+          <option value="" disabled selected>Select Language Spoken</option>
+          <option>Arabic</option>
+          <option>Chinese</option>
+          <option>English</option>
+          <option>French</option>
+          <option>German</option>
+          <option>Hindi</option>
+          <option>Japanese</option>
+          <option>Portuguese</option>
+          <option>Russian</option>
+          <option>Spanish</option>
+        </select>
+        <select id="faith-select">
+          <option value="" disabled selected>Select Faith</option>
+          <option>Buddhist</option>
+          <option>Christian</option>
+          <option>Hindu</option>
+          <option>Jewish</option>
+          <option>Muslim</option>
+          <option>Sikh</option>
+          <option>Spiritual</option>
+          <option>Taoist</option>
+          <option>Zoroastrian</option>
+          <option>None</option>
+        </select>
+        <select id="gender-select">
+          <option value="" disabled selected>Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+        <div class="location-and-range">
+          <input type="text" id="location-input" placeholder="Enter location">
+          <div class="range-slider">
+            <label for="location-range">Location Range: <span id="range-value">50 miles</span></label>
+            <input type="range" id="location-range" min="5" max="1000" step="5" value="50">
+          </div>
+        </div>
+        <button id="search-btn" onclick="handleSearch()">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Professionals Section -->
+  <section class="trending">
+    <h3>Trending Professionals</h3>
+    <div class="cards-container">
+      <!-- Cards will be dynamically rendered by feed.js -->
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <h3>Professionals Near You</h3>
+    <input type="text" id="address-input" placeholder="Enter city or address">
+    <button id="map-search-btn">Locate</button>
+    <div id="map-container" style="height: 400px; width: 100%; margin-top: 20px;"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 OneCircle. All rights reserved. | <a href="#">Terms</a> | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <script src="feed.js"></script>
+</body>
+</html>

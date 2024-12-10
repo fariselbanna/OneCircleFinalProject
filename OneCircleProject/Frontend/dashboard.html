@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - OneCircle</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script defer src="dashboard.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="dashboard-header">
+        <div class="logo">OneCircle</div>
+        <nav>
+            <ul>
+                <li><a href="feed.html">Home</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="logout.html" class="logout-button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="dashboard-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-top-card">
+                <h3>Quick Access 📂</h3>
+                <ul>
+                    <li><a href="post.html">Post</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="my-feed.html">My Feed</a></li>
+                    <li><a href="appointments.html">Appointments</a></li>
+                    <li><a href="statistics.html">Statistics</a></li>
+                    <li><a href="edit-profile.html">Edit Profile</a></li>
+                </ul>
+            </div>
+            <div class="recent-activity">
+                <h3>Recent Activity 📢</h3>
+                <div class="activity">
+                    <p><strong>New Message:</strong> Jane Doe: "Looking forward to our meeting!"</p>
+                    <button class="btn view-details">View</button>
+                </div>
+                <div class="activity">
+                    <p><strong>Upcoming Appointment:</strong> With John Smith on 12/10 at 3:00 PM</p>
+                    <button class="btn view-details">Details</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Central Section -->
+        <section class="dashboard-main">
+            <div class="welcome-section">
+                <div class="welcome-text">
+                    <h1>Welcome back, <span id="userName">Faris Elbanna</span>!</h1>
+                    <p class="role-title">Software Engineer</p>
+                    <p>
+                        As a Software Engineer, I specialize in crafting scalable, high-performance web applications that solve complex problems and drive innovation. With a strong foundation in full-stack development and a passion for clean, efficient code, I’ve collaborated on projects ranging from custom web solutions to API integrations. Currently pursuing my degree at San Diego State University, I’m dedicated to combining academic excellence with real-world experience to create impactful digital solutions.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bio Section -->
+            <section class="bio-section">
+                <h2>About Me 💼</h2>
+                <p>I take pride in my cultural roots and diverse perspectives, which enrich my problem-solving and collaboration skills.</p>
+                <div class="bio-details">
+                    <p><strong>Languages Spoken:</strong> English, Arabic</p>
+                    <p><strong>Cultural Affiliation:</strong> Middle Eastern</p>
+                    <p><strong>Faith:</strong> Muslim</p>
+                </div>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section class="portfolio">
+                <h2>Portfolio 📁</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <p>🎲 Monopoly Board Game</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p>🔗 Doubly Linked Lists</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p>📊 isSorted + Bubble Sort</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p>🔍 Binary Search</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p>📚 Stacks</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p>⚙️ Linked Lists + Your Own Functions</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p>📊 Sorts</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <p>➕ 2Sum</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <div class="stats-section">
+                <h3>Weekly Stats 📊</h3>
+                <ul>
+                    <li>Profile Views: 45</li>
+                    <li>New Connections: 12</li>
+                    <li>Messages Exchanged: 5</li>
+                    <li>Hours Worked: 35</li>
+                    <li>Upcoming Tasks: 3</li>
+                </ul>
+            </div>
+            <div class="ratings-reviews">
+                <h3>Ratings & Reviews ⭐</h3>
+                <div class="reviews">
+                    <p><strong>Average Rating:</strong> 4.8/5</p>
+                    <div class="review">
+                        <p>"Great experience, very professional!" - Jane</p>
+                    </div>
+                    <div class="review">
+                        <p>"Highly recommend for any software needs." - John</p>
+                    </div>
+                    <a href="reviews.html" class="view-more">View All Reviews</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="dashboard-footer">
+        <p>&copy; 2024 OneCircle. All rights reserved.</p>
+    </footer>
+</body>
+</html>
